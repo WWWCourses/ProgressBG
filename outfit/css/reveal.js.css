@@ -131,7 +131,7 @@ a.home_link{
     /*background: green;*/
 }
 .theme_switch a{
-    opacity: 0.2;
+    opacity: 0.4;
     font-size: 12px;
 }
 .theme_switch a:hover{
