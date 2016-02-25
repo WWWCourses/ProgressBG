@@ -1,0 +1,36 @@
+.left{
+  display: inline-block;
+  float: left;
+}
+.right{
+  display: inline-block;
+  float: right;
+  padding: 1em 0 !important;
+  line-height:2.5em !important;
+  text-align: left;
+}
+.half{
+  width: 50%;
+}
+.small_font{
+  font-size: 12px !important;
+}
+.fontsize1{
+  font-size: 1em !important;
+  line-height: 1em !important;
+}
+.reveal section img{
+  border: 0;
+}
+.reveal .inline{
+  display: inline-block;
+  width: auto;
+  box-shadow: none;
+}
+
+.text_left{
+  text-align: left;
+}
+.text_center{
+  text-align: center !important;
+}
