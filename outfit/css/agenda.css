@@ -126,8 +126,9 @@
             margin-right:.8em;
         }
         .iep_syllabus_themes .label{
-            vertical-align: middle;
             display: inline-block;
+            width: 85%;
+            vertical-align: middle;
         }
         .iep_syllabus_themes .arrow_down::after{
             /*content: "\f078";*/
@@ -173,6 +174,7 @@
         }
         .iep_syllabus_sub_themes>li{
             line-height: 2em;
+            margin-left: .5em;
         }
 
         /*~~~~~~~~~~ accents  ~~~~~~~~~~*/
