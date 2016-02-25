@@ -1,0 +1,6 @@
+[submodule "outfit/reveal.js"]
+	path = outfit/reveal.js
+	url = https://github.com/hakimel/reveal.js.git
+[submodule "outfit/highlight.js"]
+	path = outfit/highlight.js
+	url = https://github.com/isagalaev/highlight.js.git
