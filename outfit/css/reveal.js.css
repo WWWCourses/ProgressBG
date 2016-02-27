@@ -27,10 +27,6 @@
   opacity: .5;
   /*background: red;*/
 }
-/*do not want it in first slide, as it is the title*/
-/*TODO: ???*/
-
-/*Sub_Sections_Title*/
 
 /*lists*/
 .reveal section ul>strong{
@@ -54,11 +50,11 @@
     margin: 1.5em auto 0 auto;
     height: auto;
     width: auto;
-    box-shadow: 0 0 .5em .1em;
+    box-shadow: 0 0 .5em .1em rgba(150, 150, 150, 0.5);
 }
 .reveal section img.the_end{
-  border-radius: 50%;
-  box-shadow: 0 0 5em 5em rgb(0, 43, 54);
+  border-radius: 20%;
+  box-shadow: 0 0 5em 5em rgb(0, 43, 64);
   /*width: 100vmax;*/
 }
 .reveal section>dl.fa>dt{
@@ -262,6 +258,16 @@ div.results_h{
 }
 .text_center{
   text-align: center !important;
+}
+
+/*marked for advanced*/
+.reveal section .advanced{
+  font-size: .7em;
+}
+.advanced i{
+  margin-right: .3em;
+  color: rgba(250, 23,23, 0.3);
+  font-size: .8em;
 }
 
 /*********************************************

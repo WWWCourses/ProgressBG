@@ -86,7 +86,7 @@
 
 <section><h2>Защо CSS?</h2>
     <section>
-        <p><a href="https://bg.wikipedia.org/wiki/%D0%A0%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB%D1%8F%D0%BD%D0%B5_%D0%BD%D0%B0_%D0%BE%D1%82%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D0%BD%D0%BE%D1%81%D1%82%D0%B8">Разделяне на отговорности</a><a href="https://en.wikipedia.org/wiki/Separation_of_concerns#HTML.2C_CSS.2C_JavaScript"> (Separation of concernrs)</a></p>
+        <p class="advanced"><i class="fa fa-graduation-cap"></i><a href="https://bg.wikipedia.org/wiki/%D0%A0%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB%D1%8F%D0%BD%D0%B5_%D0%BD%D0%B0_%D0%BE%D1%82%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D0%BD%D0%BE%D1%81%D1%82%D0%B8">Разделяне на отговорности</a><a href="https://en.wikipedia.org/wiki/Separation_of_concerns#HTML.2C_CSS.2C_JavaScript"> (Separation of concernrs)</a></p>
         <dl class="fa">
             <dt><strong>HTML:</strong></dt>
             <dd>Съдържанието на документа.</dd>
@@ -210,6 +210,7 @@ h4 {
         </code></pre>
         <p>' ; ' след последна декларация не е задължителна, но е добра практика да се поставя винаги – улеснява редактирането на кода.</p>
     </section>
+
     <section>
         <p>Пример</p>
         <pre><code>
@@ -243,6 +244,7 @@ h4 {
         </code></pre>
         <a class="fragment" href="examples/flag_with_css.html">резултат (със CSS)...</a>
     </section>
+
     <section><h3>Коментари в CSS</h3>
         <dl>
             <dt><code>/*</code> - за начало на коментар</dt>
@@ -262,15 +264,22 @@ h4 {
                 /*background: red;*/
             }
         </code></pre>
-
     </section>
 </section>
 
-<section><h2>Дървовидна структура на HTML документ</h2>
-    <img src="images/HTML_tree.png">
-</section>
-
-<section><h2>Наследяване на CSS правилата</h2>
+<section><h2>Каскадност на CSS правилата</h2>
+    <section>
+        <h3>Специфичност (specificity)</h3>
+        <h3>Наследяване (inheritance)</h3>
+        <h3>Местоположение (location)</h3>
+    </section>
+    <section><h3>Специфичност (specificity)</h3>
+        <p>Определя се от типа на селектора (ще разгледаме подробно в темата за CSS селектори)</p>
+    </section>
+    <section><h3>Наследяване (inheritance)</h3>
+        <h3>Дървовидна структура на HTML документ</h3>
+        <img src="images/HTML_tree.png">
+    </section>
     <section>
         <h3>От елементи-родители в HTML дървото</h3>
         <pre><code>
@@ -286,14 +295,18 @@ h4 {
         <p style="font-size: .5em"><a href="examples/CSS_rules_inheritance_on_tree.html">Пример</a></p>
         <img class="norm" src="images/CSS_rules_inheritance_on_tree.png">
     </section>
-    <section>
+    <section><h3>Местоположение (location)</h3>
         <h3>Каскадно прилагане на стил</h3>
         <ol reversed>
-            <li>Дефолтният стил на Браузера.</li>
-            <li>Потребителски стил на Браузера (“reader style sheet”)</li>
-            <li>Външен стил, свързан със документа чрез елемента link.</li>
-            <li>Импортиран стил в документа, добавен чрез @import функцията)</li>
-            <li>Вграден в документа стил (Embedded style sheets) чрез елемента style</li>
+            <li>Стил, прилаган от Браузера.</li>
+            <li>Потребителски стил на Браузера (“reader/user style sheet”)</li>
+            <li><span>Стил, зададен в HEAD секцията:</span>
+                <ul>
+                    <li>Външен стил, свързан със документа чрез елемента link.</li>
+                    <li>Импортиран стил в документа, добавен чрез @import функцията)</li>
+                    <li>Вграден в документа стил (Embedded style sheets) чрез елемента style</li>
+                </ul>
+            </li>
             <li>Инлайн стил, добавен към елемент чрез атрибута му style в отварящия таг</li>
             <li>Правило, маркирано като  !important от автора на страницата.</li>
             <li>Правило, маркирано като  !important от потребителя</li>
@@ -314,9 +327,8 @@ h4 {
         <a class="fragment" href="examples/CSS_rules_precedence_important.html">Резултат...</a>
     </section>
 </section>
-<section>
-<!-- <section data-background="../../../../outfit/images/for_slides/the_end_on_sand.jpg"> -->
-    <img class="the_end" src="../../../../outfit/images/for_slides/the_end_on_sand.jpg">
+<section data-background="../../../../outfit/images/for_slides/the_end_on_sand.jpg">
+    <!-- <img class="the_end" src="../../../../outfit/images/for_slides/the_end_on_sand.jpg"> -->
 </section>
 <!--
 ########################################################
