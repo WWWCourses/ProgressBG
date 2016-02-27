@@ -30,7 +30,7 @@
     <style type="text/css">
     .reveal .slides h1{
         font-family: serif;
-        color: #FF00E6;
+        color: #A7439D;
     }
     </style>
     <base target="_blank">
@@ -246,6 +246,27 @@ h4 {
         </code></pre>
         <a class="fragment" href="examples/flag_with_css.html">резултат (със CSS)...</a>
     </section>
+    <section><h3>Коментари в CSS</h3>
+        <dl>
+            <dt><code>/*</code> - за начало на коментар</dt>
+            <dt><code>*/</code> - за край на коментар</dt>
+        </dl>
+        <p>Пример:</p>
+        <pre><code>
+            /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+              Пример за многоредов коментар
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+            /*Main_Sections_Title*/
+            section>h2{
+                font-size: 1em;
+                -webkit-border-radius: 12px;  /* Safari 3-4 */
+                -moz-border-radius: 12px;     /* Firefox 3.6 and below */
+                border-radius: 12px;          /* modern browsers */
+                /*background: red;*/
+            }
+        </code></pre>
+
+    </section>
 </section>
 
 <section><h2>Дървовидна структура на HTML документ</h2>
@@ -264,11 +285,9 @@ h4 {
             background: red;
             color: #FFF;
         }
-
-
         </code></pre>
-        <img src="images/CSS_rules_inheritance_on_tree.png">
-        <p><a href="examples/CSS_rules_inheritance_on_tree.html">Пример</a></p>
+        <p style="font-size: .5em"><a href="examples/CSS_rules_inheritance_on_tree.html">Пример</a></p>
+        <img class="norm" src="images/CSS_rules_inheritance_on_tree.png">
     </section>
     <section>
         <h3>Каскадно прилагане на стил</h3>
@@ -297,6 +316,10 @@ h4 {
         <p>Как ще бъде оцветен параграфа и текста в него?</p>
         <a class="fragment" href="examples/CSS_rules_precedence_important.html">Резултат...</a>
     </section>
+</section>
+<section>
+<!-- <section data-background="../../../../outfit/images/for_slides/the_end_on_sand.jpg"> -->
+    <img class="the_end" src="../../../../outfit/images/for_slides/the_end_on_sand.jpg">
 </section>
 <!--
 ########################################################

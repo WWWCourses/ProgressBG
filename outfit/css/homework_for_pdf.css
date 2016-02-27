@@ -21,13 +21,14 @@ a{
     /*border-bottom: .1em dotted #999;*/
 }
 .results{
-    width: 100%;
+    box-sizing: border-box;
+    width: 97%;
     background-color: #FFF;
     color: #000;
     /*max-width: 50em;*/
     margin: 1em 0em .2em 0em;
     padding: 1em 0em 1em .5em;
-    /*border: .2em outset #D1D1D1;*/
+    border: .1em inset #D1D1D1;
 }
 .notes{
     margin: 0em 0em 0em 2em;
