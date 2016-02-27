@@ -284,16 +284,44 @@ h4 {
         <h3>От елементи-родители в HTML дървото</h3>
         <pre><code>
         body{
-            background-color: #4279AC;
-            color: #000;
+            /*Всички елементи в body, ще се изобразят с черен на цвят шрифт*/
+            color: black;
         }
+        /*Всички елементи в div, ще се изобразят с бял на цвят шрифт*/
         div{
-            background: red;
-            color: #FFF;
+            color: white;
         }
         </code></pre>
         <p style="font-size: .5em"><a href="examples/CSS_rules_inheritance_on_tree.html">Пример</a></p>
         <img class="norm" src="images/CSS_rules_inheritance_on_tree.png">
+    </section>
+    <section><h3>Наследяване (inheritance)</h3>
+        <p><strong>Не всички свойства се наследяват!</strong></p>
+        <p>Експериментирайте със следния код:</p>
+        <pre><code>
+        body{
+            background-color: lightblue;
+            color: black;
+        }
+        div{
+            background-color: red;
+            color: white;
+            /*забележете дали свойството border се наследява, така както color*/
+            border: 5px solid green;
+        }
+        </code></pre>
+        <pre><code>
+        <h2>Заглавие</h2>
+        <div>
+            <p>текст в параграф...</p>
+            <ul>
+                <li>Елемент1</li>
+                <li>Елемент2</li>
+                <li>Елемент3</li>
+            </ul>
+        </div>
+        <p>друг параграф...</p>
+        </code></pre>
     </section>
     <section><h3>Местоположение (location)</h3>
         <h3>Каскадно прилагане на стил</h3>

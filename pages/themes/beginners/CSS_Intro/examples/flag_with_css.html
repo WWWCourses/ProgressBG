@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>flag_with_css</title>
+    <!-- С примера илюстрирам каскадността в CSS, като използвам възможно най-прости селектори.
+         В реалността - те биха били по-сложни. -->
     <style type="text/css">
         .flag{
             display: inline-block;
@@ -10,38 +12,28 @@
             width: 20em;
             border: .2em solid #333;
         }
-        .flag>span{
-            display: block;
-        }
-        .bg>span:nth-child(1){
-            background: white;
-            color: #CCC;
-        }
-        .bg>span:nth-child(2){
-            background: green;
-            color: #CCC;
-        }
-        .bg>span:nth-child(3){
-            /*background: red;*/
-            color: #CCC;
-        }
-        .bg>span:nth-child(3){
-            /*background: red;*/
-            /*font-family: sans-serif;*/
-        }
-        .blue{
-            background: blue;
-        }
+        /*тези правила са в сила за всички span елементи*/
         span{
-            background: black !important;
+            display: block;
+            color: #CCC;
         }
-
+        /*само за първия span елемент*/
+        span:nth-child(1){
+            background: white;
+        }
+        /*само за втория span елемент*/
+        span:nth-child(2){
+            background: green;
+        }
+        /*само за третия span елемент*/
+        span:nth-child(3){
+            background: red;
+        }
     </style>
 </head>
 <body>
-    <div class="flag bg blue">
-        <p>Българското знаме</p>
-        <span>Бяло</span><span>Зелено</span><span style="background: yellow">Червено</span>
+    <div class="flag bg">
+        <span>Бяло</span><span>Зелено</span><span>Червено</span>
     </div>
 </body>
 </html>
