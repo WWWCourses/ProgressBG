@@ -1,0 +1,28 @@
+/*всички линкове в документа*/
+a{
+    text-decoration: none;
+}
+/*всички линкове, със стойност на атрибута 'href' започваща с "https":*/
+a[href^="https"]{
+    color: green;
+}
+/*всички вътрeшни линкове:*/
+a:not([href^="http"]){
+    font-size: 300%;
+}
+/*всички линкове, със стойност на атрибута 'href' завършваща на '.pdf'*/
+a[href$=".pdf"]{
+    background-image: url("images/Adobe_PDF_file_icon_32x32.png");
+    background-size: 1em 1em;
+    background-position: left center;
+    background-repeat: no-repeat;
+    padding-left: 1.2em;
+    color: #0087cc;
+
+}
+/*всички линкове, в които участва низът 'product'*/
+a[href*="product"]{
+    color: blue;
+    text-decoration: none;
+    font-style: italic;
+}

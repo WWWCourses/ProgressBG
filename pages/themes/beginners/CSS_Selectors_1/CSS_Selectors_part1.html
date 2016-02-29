@@ -100,6 +100,7 @@
             <pre><code>a[href^="https://"]:hover</code></pre></dt>
         </dl>
         <p class="advanced text_left">Списък със всички дефинирани в стандарта (CSS1 – CSS3) селектори: <a href="http://www.w3schools.com/cssref/css_selectors.asp">css_selectors</a></p>
+        <p>В момента (2016) се разработва спецификацията<br><a href="https://drafts.csswg.org/selectors-4/#subject">CSS Selectors Level 4</a></p>
     </section>
 </section>
 
@@ -107,11 +108,13 @@
     <h2>Селектори за елементи</h2>
     <section class="text_left"><h3>Element (type) selectors</h3>
         <pre><code>
+            /* Всички параграфи в документа ще бъдат с червен шрифт */
             p {
                 color: red;
             }
         </code></pre>
-        <p><u>Действие</u>: селектира всички HTML елементи от тип p.</p>
+        <p><u>Действие</u>: селектира всички HTML елементи от дадения тип.</p>
+        <p><a href="examples/type_selectors–famous_quotes.html">Пример: "Цитати на известни личности"</a></p>
     </section>
     <section class="text_left"><h3>Универсален селектор (Universal selector)</h3>
         <pre><code>
@@ -144,7 +147,7 @@
 
     <section><h3>Селектор за id</h3>
         <p>Записва се с диез (хаш таг) - "<b>#</b>", последван от стойност на атрибута <b>id</b>.</p>
-        <p>Тъй като с дадено <b>id</b> можем да обозначим само един единствен елемент от  цялто HTML дърво, то е безсмислен записът със тип на елемент отрпед.</p>
+        <p>Тъй като с дадено <b>id</b> можем да обозначим само един единствен елемент от  цялто HTML дърво, то е безсмислен записът с тип на елемент отрпед.</p>
         <p> Например: <code>p#vip{...}</code> няма смисъл и не се препоръчва да се използва.</p>
     </section>
 

@@ -3,32 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <title>class_selectors</title>
-    <style type="text/css">
-        /* Селектира всички HTML елементи, които са дефинирали class="c1" */
-        .c1{
-            color: purple;
-        }
-        /* Селектира всички HTML елементи, от тип 'h1', които са дефинирали class="c1" */
-        h1.c1{
-            font-style: italic;
-        }
-
-        /* Селектор по id */
-        #vip{
-            color: #aa3333;
-            font-size: 2em;
-            text-shadow:
-                2px 2px #a000a0,
-                2px 2px #c000c0
-            ;
-        }
-    </style>
+   <link rel="stylesheet" type="text/css" href="class_selectors.css">
 </head>
 <body>
-    <h1 class="c1">Заглавие</h1>
-    <p class="c1">Параграф 1</p>
-    <h2 class="c1">Под заглавие</h2>
-    <p class="c1">Параграф 2</p>
-    <p id="vip">Съществува само един елемент с id="vip"</p>
+    <div>
+        <div>
+            <p><a href="http://progressbg.net/" title="ProgressBG">ProgressBG</a></p>
+            <p><a href="https://www.google.bg">google.bg</a></p>
+        </div>
+    </div>
+    <div>
+        <ul>
+            <li><a href="#.pdf">PDF</a></li>
+            <li><a href="#.xlsx">Excel</a></li>
+            <li><a href="http://store.bg/products/book">Продукти</a></li>
+            <li><a href="http://olx.bg/product/laptop">Продукти</a></li>
+            <li><a href="http://third.bg/products/flower">Продукти</a></li>
+            <li></li>
+        </ul>
+    </div>
 </body>
 </html>
+
