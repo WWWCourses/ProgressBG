@@ -1,14 +1,8 @@
-a{
-    color: red;
+p{
+    margin: 0;
+    padding: 0;
 }
-a[href^="https"]{
-    color: green;
-}
-a[href$="pdf"]{
-    background-color: yellow;
-}
-a[href*="product"]{
-    color: blue;
-    text-decoration: none;
-    font-style: italic;
+.c1{
+    color: #8E078E;
+    margin: .5em 0 .5em 2rem;
 }

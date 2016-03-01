@@ -104,8 +104,7 @@
     </section>
 </section>
 
-<section>
-    <h2>Селектори за елементи</h2>
+<section><h2>Селектори за елементи</h2>
     <section class="text_left"><h3>Element (type) selectors</h3>
         <pre><code>
             /* Всички параграфи в документа ще бъдат с червен шрифт */
@@ -114,7 +113,7 @@
             }
         </code></pre>
         <p><u>Действие</u>: селектира всички HTML елементи от дадения тип.</p>
-        <p><a href="examples/type_selectors–famous_quotes.html">Пример: "Цитати на известни личности"</a></p>
+        <p><a href="examples/type_selectors_example.html">Пример: "Цитати на известни личности"</a></p>
     </section>
     <section class="text_left"><h3>Универсален селектор (Universal selector)</h3>
         <pre><code>
@@ -144,13 +143,11 @@
             }
         </code></pre>
     </section>
-
     <section><h3>Селектор за id</h3>
         <p>Записва се с диез (хаш таг) - "<b>#</b>", последван от стойност на атрибута <b>id</b>.</p>
         <p>Тъй като с дадено <b>id</b> можем да обозначим само един единствен елемент от  цялто HTML дърво, то е безсмислен записът с тип на елемент отрпед.</p>
         <p> Например: <code>p#vip{...}</code> няма смисъл и не се препоръчва да се използва.</p>
     </section>
-
     <section><h3>Пример</h3>
         <pre><code>
         /* Селектира всички HTML елементи, които са дефинирали class="c1" */
@@ -182,14 +179,6 @@
     </section>
 </section>
 
-<section><h2>Селектори за атрибути (Attribute Selectors)</h2>
-    <section><h3>Self-learning section</h3>
-        <a href="http://www.w3schools.com/css/css_attribute_selectors.asp">w3schools - CSS Attribute Selector</a>
-        <hr>
-        <p>Дават възможност да се селектират елементи с произволни атрибути и стойности за тях.</p>
-    </section>
-</section>
-
 <section><h2>CSS Комбинатори (CSS Combinators)</h2>
     <section>
         <p>Това са селектори отчитащи позицията (контекста) на елементите в HTML дървото.</p>
@@ -203,22 +192,22 @@
         </dl>
     </section>
     <section><h3>Видове HTML възли</h3>
-    <div class="html_block">
-        <div class="parent">
-        <p>DIV1</p>
-        <div class="parent child">
-            <p>DIV2</p>
-            <div class="child">
-                <p>DIV3</p>
+        <div class="html_block">
+            <div class="parent">
+            <p>DIV1</p>
+            <div class="parent child">
+                <p>DIV2</p>
+                <div class="child">
+                    <p>DIV3</p>
+                </div>
             </div>
+            </div>
+            <hr>
+            <ul>
+                <li>DIV3: Child of DIV2; Descendant of DIV2 and DIV3</li>
+                <li><a href="examples/html_nodes_types.html">Код...</a></li>
+            </ul>
         </div>
-        </div>
-        <hr>
-        <ul>
-            <li>DIV3: Child of DIV2; Descendant of DIV2 and DIV3</li>
-            <li><a href="examples/html_nodes_types.html">Код...</a></li>
-        </ul>
-    </div>
     </section>
     <section>
         <p>Поради причини за сигурност не можем да селектираме елементи нагоре по дървото. Поради това няма селектор за предшественик.</p>
@@ -232,6 +221,13 @@
     </section>
 </section>
 
+<section><h2>Селектори за атрибути (Attribute Selectors)</h2>
+    <section><h3>Self-learning section</h3>
+        <a href="http://www.w3schools.com/css/css_attribute_selectors.asp">w3schools - CSS Attribute Selector</a>
+        <hr>
+        <p>Дават възможност да се селектират елементи с произволни атрибути и стойности за тях.</p>
+    </section>
+</section>
 <section data-background="../../../../outfit/images/for_slides/the_end_on_sand.jpg">
     <!-- <img class="the_end" src="../../../../outfit/images/for_slides/the_end_on_sand.jpg"> -->
 </section>
