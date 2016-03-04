@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Форми в HTML</title>
+    <title>Таблици в HTML</title>
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -26,14 +26,12 @@
     <script src="lib/js/html5shiv.js"></script>
     <![endif]-->
     <!-- custom -->
-    <link rel="stylesheet" href="/ProgressBG/outfit/css/reveal.js.css">
-    <link rel="stylesheet" type="text/css" href="/ProgressBG/outfit/css/lessons/code_preview.css">
-    <link rel="stylesheet" type="text/css" href="/ProgressBG/outfit/css/custom_hljs.css">
+    <link rel="stylesheet" href="../../../../outfit/css/reveal.js.css">
     <base target="_blank">
 </head>
 <body>
     <div class="reveal default center" data-transition-speed="default" data-background-transition="default">
-        <a class="home_link" href="../../../agenda/beginners.html#HTML5_input_forms"><i class="fa fa-home"></i></a>
+        <a class="home_link" href="../../../agenda/beginners.html#HTML_Tables.html"><i class="fa fa-home"></i></a>
         <div class="footer theme_switch">
             <a href="#" onclick="document.getElementById('theme').setAttribute('href','../../../../outfit/reveal.js/css/theme/white.css'); return false;">White</a>
             <a href="#" onclick="document.getElementById('theme').setAttribute('href','../../../../outfit/reveal.js/css/theme/league.css'); return false;">League</a>
@@ -51,7 +49,7 @@
 ##################### SLIDES START #####################
 ########################################################
 -->
-<section><h1>HTML форми</h1></section>
+<section><h1>Таблици в HTML</h1></section>
 <section data-transition="zoom">
     <div class="copyright">
         <div class="note">
@@ -69,103 +67,82 @@
     </div>
 </section>
 
-<section><h3>Елемент form</h3>
-    <p>Контейнер, в който се разполагат елементите на
-формата</p>
-<pre><code class="html">
-    <form action="registration.py" method="POST">
-        <div>Име: <input type="text" name="uname"></div>
-        <div>Парола: <input type="password" name="pass"></div>
-        <button type="submit">Submit</button>
-    </form>
-</code></pre>
+<section><h3>Използване</h3>
+<ul class="fa">
+    <li>Само за представяне на информация във вид на таблица!</li>
+    <li>Преди CSS2 таблиците се използваха за оформление на страницата. Което водеше до маркъп код, многократно надвишаваш самото съдържание на страницата! (пример: <a href="https://web.archive.org/web/20091228021514/http://www.store.bg/?">Wayback Machine: store.bg</a>)</li>
+    <li>След CSS2 е абсолютно недопустимо е да се използват таблици за тези цели!</li>
+    <li>В CSS2.1 се въвеждат множество свойства, чрез който можем да изградим табличен layout, без да пренасищаме HTML съдържанието с излишен код.</li>
+</ul>
 </section>
-
-<section><h3>Допустими елементи във <code><b>form</b></code></h3>
-<pre>
-
-    <a href="http://www.w3schools.com/tags/tag_input.asp">&lt;input&gt;</a>       <a href="http://www.w3schools.com/tags/tag_textarea.asp">&lt;textarea&gt;</a>        <a href="http://www.w3schools.com/tags/tag_button.asp">&lt;button&gt;</a>
-
-    <a href="http://www.w3schools.com/tags/tag_option.asp">&lt;option&gt;</a>      <a href="http://www.w3schools.com/tags/tag_optgroup.asp">&lt;optgroup&gt;</a>        <a href="http://www.w3schools.com/tags/tag_select.asp">&lt;select&gt;</a>
-
-    <a href="http://www.w3schools.com/tags/tag_label.asp">&lt;label&gt;</a>       <a href="http://www.w3schools.com/tags/tag_fieldset.asp">&lt;fieldset&gt;</a>
-</pre>
+<section>
+    <section><h3>Създаване на таблица</h3>
+    <p><a href="http://www.w3schools.com/html/html_tables.asp">w3schools - HTML Tables</a></p>
+    <p>Основни елементи:</p>
+    <ul>
+        <li><code><a href="http://www.w3schools.com/tags/tag_table.asp">table</a></code></li>
+        <li><code><a href="http://www.w3schools.com/tags/tag_caption.asp">caption</a></code></li>
+        <li><code><a href="http://www.w3schools.com/tags/tag_colgroup.asp">colgroup</a></code></li>
+        <li><code><a href="http://www.w3schools.com/tags/tag_tr.asp">tr</a></code></li>
+        <li><code><a href="http://www.w3schools.com/tags/tag_td.asp">td</a></code></li>
+        <li><code><a href="http://www.w3schools.com/tags/tag_th.asp">th</a></code></li>
+    </ul>
+    <p>Обърнете внимание, че почти всички атрибути на посочените елементи са забранени в HTML5!</p>
+    </section>
+    <section>
+        <p>Пример:</p>
+        <img class="norm" src="images/table_no-span.png">
+        <pre><code>
+&lt;table border="1"&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Едно&lt;/td&gt;
+        &lt;td&gt;Две&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt; Три &lt;/td&gt;
+        &lt;td&gt; Четири &lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+        </code></pre>
+    </section>
 </section>
 
 <section>
-    <section>
-        <h3>Елемент <code><b><a href="http://www.w3schools.com/tags/tag_input.asp">input</a></b></code></h3>
-        <p>Създава поле за въвеждане на данни от потребителя</p>
-        <p>Елемента е празен. Типът му се регулира от атрибута <a href="http://www.w3schools.com/tags/att_input_type.asp">type</a>.</p>
-        <div class="left half">
-            <pre><code style="line-height: 2em">
-    Text type: <input type="text">
-    Pass type: <input type="password">
-    Checkbox: <input type="checkbox">
-    Radio: <input type="radio">
-    File: <input type="file">
-    Color: <input type="color">
-    Submit button: <input type="submit">
-    Reset button: <input type="reset">
-            </code></pre>
-        </div>
-        <div class="right half small_font">
-            Text type: <input type="text"><br>
-            Pass type: <input type="password"><br>
-            Checkbox: <input type="checkbox"><br>
-            Radio: <input type="radio"><br>
-            File: <input type="file"><br>
-            Color: <input type="color"><br>
-            Submit button: <input type="submit"><br>
-            Reset button: <input type="reset"><br>
-        </div>
+    <section><h3>Обединение на клетки в таблица</h3>
+        <h4>(Cells span - аналогично на 'merge' в Excel)</h4>
     </section>
-    <section><h4>Нови типове input в HTML5</h4>
-            <a href="http://www.w3schools.com/tags/tag_input.asp">http://www.w3schools.com/tags/tag_input.asp</a>
+    <section><h5>Хоризонтално (обединяване по колони)</h5>
+        <h4><a href="http://www.w3schools.com/tags/att_td_colspan.asp">td colspan attribute</a></h4>
+        <p>Пример:</p>
+        <img class="norm" src="images/table_colspan.png">
+        <pre><code>
+&lt;table border="1"&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Едно&lt;/td&gt;
+        &lt;td&gt;Две&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td colspan="2"&gt; Три и четири &lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+        </code></pre>
     </section>
-</section>
-
-<section><h3>Елемент <code class="html">label</code></h3>
-<a href="http://www.w3schools.com/tags/tag_label.asp">http://www.w3schools.com/tags/tag_label.asp</a>
-</section>
-
-<section><h3>Елемент <code>textarea</code></h3>
-    <a href="http://www.w3schools.com/tags/tag_textarea.asp">http://www.w3schools.com/tags/tag_textarea.asp</a>
-</section>
-
-<section><h3>Елемент <code>select</code></h3>
-    <a href="http://www.w3schools.com/tags/tag_select.asp">http://www.w3schools.com/tags/tag_select.asp</a>
-</section>
-
-<section><h3>Елементи <code>option и optgroup</code></h3>
-    <a href="http://www.w3schools.com/tags/tag_option.asp">http://www.w3schools.com/tags/tag_option.asp</a>
-    <a href="http://www.w3schools.com/tags/tag_optgroup.asp">http://www.w3schools.com/tags/tag_optgroup.asp</a>
-    <p>
-        <select name="town" class="fontsize1">
-            <option value="">Населено място</option>
-            <option value="София">София</option>
-            <optgroup label="А">
-                <option value="Айдемир">Айдемир</option>
-                <option value="Айрово">Айрово</option>
-                <option value="...">...</option>
-            </optgroup>
-            <optgroup label="Б">
-                <option value="Багренци">Багренци</option>
-                <option value="Балабанско">Балабанско</option>
-                <option value="...">...</option>
-            </optgroup>
-            <option value="towncustom_option">Друго</option>
-        </select>
-    </p>
-</section>
-
-<section><h3>Елемени <code>fieldset & legend</code></h3>
-    <a href="http://www.w3schools.com/tags/tag_fieldset.asp">http://www.w3schools.com/tags/tag_fieldset.asp</a>
-    <a href="http://www.w3schools.com/tags/tag_legend.asp">http://www.w3schools.com/tags/tag_legend.asp</a>
-</section>
-
-<section><h3>Елемент <code>button</code></h3>
-    <a href="http://www.w3schools.com/tags/tag_button.asp">http://www.w3schools.com/tags/tag_button.asp</a>
+    <section><h5>Вертикално (обединяване по редове)</h5>
+    <h4><a href="http://www.w3schools.com/tags/att_td_rowspan.asp">td rowspan attribute</a></h4>
+    <p>Пример:</p>
+    <img class="norm" src="images/table_rowspan.png">
+    <pre><code>
+&lt;table border="1"&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Едно&lt;/td&gt;
+        &lt;td rowspan="2"&gt;Две и четири&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt; Три &lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+    </code></pre>
+    </section>
 </section>
 
 <section data-background="../../../../outfit/images/for_slides/the_end_on_sand.jpg">
