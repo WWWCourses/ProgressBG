@@ -4,8 +4,6 @@ code[rel]::before{
     display: block;
     width: 100%;
     margin-top: -0.5em;
-    /* margin-left: -6px; */
-    /* padding-left: 12px; */
     padding-top: .3em;
     padding-bottom: .3em;
     overflow: auto;
@@ -13,7 +11,7 @@ code[rel]::before{
     border-bottom-left-radius:  3px;
     border-bottom-right-radius: 3px;
     font-weight: bold;
-        font-family: 'PT Serif',serif;
+    font-family: 'PT Serif',serif;
 }
 code[rel="HTML"]::before{
     background: rgba(95, 24, 38, .5);
@@ -30,7 +28,7 @@ code:first-line{
 /*padding hack*/
 pre>code>div{
     margin-top: -2.5em;
-    margin-bottom: -3em;
+    margin-bottom: -2.5em;
 }
 pre>code>div.tab3{ margin-left: -7em; }
 pre>code>div.tab4{ margin-left: -9.5em; }

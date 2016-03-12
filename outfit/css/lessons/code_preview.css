@@ -1,4 +1,3 @@
-/*TODO: @import do not work on Apache2 !!!*/
 @import "/ProgressBG/outfit/css/custom_hljs.css" screen, projection;
 /*reset {*/
     *{
@@ -44,7 +43,7 @@
     }
     iframe.stretch{
         width: 100%;
-        min-height: 100vh;
+        min-height: 90vh;
         border: none;
     }
 /*page style }*/
