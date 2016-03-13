@@ -172,6 +172,9 @@
         .iep_syllabus_themes .hours::after{
             content: ' h.';
         }
+        .iep_syllabus_sub_themes{
+            margin-left: 2.3em;
+        }
         .iep_syllabus_sub_themes>li{
             line-height: 2em;
             margin-left: .5em;
