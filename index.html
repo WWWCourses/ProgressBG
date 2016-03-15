@@ -8,19 +8,72 @@
     <meta name="generator" content="Sublime Text3, SASS">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="outfit/css/footer.css">
-    <link rel="stylesheet" type="text/css" href="outfit/css/main.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Titillium+Web:400,400italic">
+    <!-- TODO: export... -->
+    <style type="text/css">
+        *{margin: 0; padding: 0;}
+        body {
+            font-size: 1vmax;
+        }
+        .header{
+            height: 12vmax;
+            margin: 1em;
+            /* line-height: 5em; */
+            color: #4d4b4d;
+            text-align: center;
+            font-family: 'Titillium Web', sans-serif;
+            border-bottom: 1px solid #999;
+        }
+        .header>p:nth-child(1){
+            font-size: 5em;
+        }
+        .header>p:nth-child(2){
+            font-size: 2em;
+            opacity: .7;
+        }
+        .main{
+            position: relative;
+            padding-top: 20vh;
+            width: 100%;
+            vertical-align: middle;
+        }
+        .main>p{
+            position: relative;
+            width: 100%;
+            text-align: center;
+            font-size: 5em;
+        }
+        .main a{
+            font-size: .7em;
+            font-family: 'Titillium Web', sans-serif;
+            font-weight: normal;
+            font-style: normal;
+        }
+        .main>p:nth-child(2n+1)>a{
+            color: #AB47BC;
+        }
+        .main p:nth-child(2n+0)>a{
+            color: #03A9F4;
+        }
+        .footer{
+            position: fixed;
+            bottom: 0;
+            height: 3vmax;
+            padding-top: 1vmax;
+        }
+    </style>
 </head>
 <body>
-<header>
-<p>Front-end Development Course</p>
-<p>Agenda</p>
+<header class="header">
+    <p>ProgressBG Courses</p>
+    <p>Taught by Iva E.Popva</p>
 </header>
-<article>
-    <a class="content_left" href="pages/agenda/beginners.html" title="Go to Course Agenda in Bulgarian">Fundamentals</a>
-    <a class="content_right" href="pages/agenda/advanced.html" title="Go to Course Agenda in English">Advanced</a>
-    <div class="diagonal_bg"></div>
+<article class="main">
+    <p><a href="http://wwwcourses.github.io/ProgressBG-Front-End-Dev/">WebDesin (HTML/CSS/JS)</a></p>
+    <!-- <p><a href="http://wwwcourses.github.io/ProgressBG-MySQL/">MySQL</a> -->
+    </p>
 </article>
-<footer><div class="license">
+<footer class="footer"><div class="license">
     <p><span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Iva E. Popova</span>, 2016.
     <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a></p>
     </div>
